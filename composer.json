@@ -1,0 +1,35 @@
+{
+  "name": "vkovic/laravel-db-redirector",
+  "description": "Manage Laravel HTTP redirections using database",
+  "keywords": ["laravel", "redirect", "database"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladimir Ković",
+      "email": "vlada.kovic@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Vkovic\\LaravelDbRedirector\\": "src/package"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Vkovic\\LaravelDbRedirector\\Test\\": "tests"
+    }
+  },
+  "require": {
+    "php": "^7.0",
+    "laravel/framework": "5.5.*|5.6.*|5.7.*"
+  },
+  "require-dev": {
+    "orchestra/testbench": "3.5.*|3.6.*|3.7.*",
+    "orchestra/database": "3.5.*|3.6.*|3.7.*",
+    "phpunit/phpunit": "^6.3|^7.0"
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "minimumu-stability": "dev"
+}
