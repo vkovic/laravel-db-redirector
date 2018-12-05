@@ -14,7 +14,7 @@ to comprehend.
 
 ## Compatibility
 
-The package is compatible with Laravel versions `>= 5.1`
+The package is compatible with Laravel versions `>= 5.5`
 
 ## Installation
 
