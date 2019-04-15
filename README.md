@@ -24,22 +24,6 @@ Install the package via composer:
 composer require vkovic/laravel-db-redirector
 ```
 
-The package needs to be registered in service providers:
-
-```php
-// File: config/app.php
-
-// ...
-
-/*
- * Package Service Providers...
- */
-
-// ...
-
-Vkovic\LaravelDbRedirector\Providers\DbRedirectorServiceProvider::class,
-```
-
 Database redirector middleware needs to be added to middleware array:
 
 ```php
@@ -189,3 +173,22 @@ So lets examine our previous case, we have:
 
 In this case both rules have the same number of named params, but in the first rule "{param}" is
 nearer the end of the rule, so it will have priority and we'll end up at "/four".
+
+---
+
+## Contributing
+
+If you plan to modify this Laravel package you should run tests that comes with it.
+Easiest way to accomplish this would be with `Docker`, `docker-compose` and `phpunit`.
+
+First, we need to initialize Docker containers:
+
+```bash
+docker-compose up -d
+```
+
+After that, we can run tests and watch the output:
+
+```bash
+docker-compose exec app vendor/bin/phpunit
+```
